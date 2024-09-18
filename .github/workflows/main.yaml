@@ -40,6 +40,9 @@ jobs:
     runs-on: ubuntu-latest #ubuntu is a widely used Linux distribution that is heavily supported
 
     steps:
+
+      - name: Checkout Code
+        uses: actions/checkout@v2 #checks our code for any stan-out errors
      
       - name: Set up Python
         uses: actions/setup-python@v2
